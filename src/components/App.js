@@ -34,7 +34,7 @@ class App extends Component {
       <div>
         <Header />
         <List />
-        <Footer />
+        <Footer name="Makanan Nusantara" tahun="1990"/>
       </div>
     );
   }
