@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
-            daftar: "daftar makanan nusantara"
+            daftar: "daftar makanan nusantara",
+            daftarList: this.props.list
         }
     }
     render() {
@@ -12,6 +13,7 @@ class Header extends Component {
             <div>
                 <h2>tes render elements</h2>
                 <p>{this.state.daftar}</p>
+                <p>{this.state.daftarList}</p>
             </div>
         );
     }
