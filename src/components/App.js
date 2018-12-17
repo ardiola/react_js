@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Top from './Top';
 import Footer from './Footer';
 import List from './List';
 // import logo from './logo.svg';
@@ -33,6 +34,7 @@ class App extends Component {
     return (
       <div>
         <Header list="3 terbaik"/>
+        <Top />
         <List />
         <Footer name="Makanan Nusantara" tahun="1990"/>
       </div>
