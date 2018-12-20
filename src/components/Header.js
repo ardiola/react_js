@@ -12,7 +12,7 @@ class Header extends Component {
     }
 
     handlePesan(value, e) {
-        e.preventDefault();
+        e.preventDefault(); // agar tidak reload page nya
         alert(this.state.daftar);
         alert(value);
     }

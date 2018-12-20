@@ -4,7 +4,7 @@ import React from "react";
 const Top = () => {
 
     const handlePesan = (value, e) => {
-        e.preventDefault();
+        e.preventDefault(); // agar tidak reload page nya
         alert("ini halaman top!!");
         alert(value)
     }
