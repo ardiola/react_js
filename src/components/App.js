@@ -3,7 +3,7 @@ import Header from './Header';
 import Top from './Top';
 import Main from './Main';
 import Footer from './Footer';
-import List from './List';
+// import List from './List';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -36,8 +36,28 @@ class App extends Component {
       <div>
         <Header list="3 terbaik"/>
         <Top />
-        <Main />
-        <List />
+        <Main  daftarMakanan = {[
+                {
+                    nama: "Mie Ayam ++",
+                    harga: 10000
+                },
+                {
+                    nama: "Bakso ++",
+                    harga: 13000
+                },
+                {
+                    nama: "Mie Ayam Bakso ++",
+                    harga: 20000
+                },
+                {
+                    nama: "Soto ++",
+                    harga: 10000
+                }
+            ]} 
+          />
+        {
+        // <List /> comment pada return (kasih curlybracket)
+        }
         <Footer name="Makanan Nusantara" tahun="1990"/>
       </div>
     );
